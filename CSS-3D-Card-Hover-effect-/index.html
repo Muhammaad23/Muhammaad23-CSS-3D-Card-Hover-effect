@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Hover Effect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="images/loading-image.jpg" alt="Yuklanmoqda...">
+    </div>
+    <svg width="100%">
+        <text x="50%" y="100%">Sneckers</text>
+      </svg>
+
+    <div class="card blue">
+        <div class="product">
+            <span class="number">01</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">Rs400/-</span>
+            <img src="images/nike-blue.png">
+        </div>
+        <div class="title">
+            <h2>Nike Blue</h2>
+        </div>
+    </div>
+
+    <div class="card purple">
+        <div class="product">
+            <span class="number">02</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">Rs.899/-</span>
+            <img src="images/nike-purple.png">
+        </div>
+        <div class="title">
+            <h2>Nike Purple</h2>
+        </div>
+    </div>
+
+    <div class="card blue">
+        <div class="product">
+            <span class="number">02</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">Rs.899/-</span>
+            <img src="images/nike-blue.png">
+        </div>
+        <div class="title">
+            <h2>Nike Blue</h2>
+        </div>
+    </div>
+<div class="card purple">
+        <div class="product">
+            <span class="number">01</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">Rs400/-</span>
+            <img src="images/nike-purple.png">
+        </div>
+        <div class="title">
+            <h2>Nike Purple</h2>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon pinterest"><i class="fab fa-pinterest"></i></a>
+    </div>
+    <script src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 5000,
+            glare: true,
+            'max-glare': 0.5,
+        });
+    </script>
+    <script>
+        // 5 soniya kechiktirib, yuklash ekranini yashirish
+        setTimeout(function() {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 5000); // 5000 millisekund = 5 soniya
+    </script>
+</body>
+</html>
